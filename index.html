@@ -10,6 +10,7 @@
         body {
             background-color: black;
             justify-content: center;
+            font-family: Bluu Next, serif;
         }
 
         div#header_logo {
@@ -42,15 +43,37 @@
             display: flex;
             font-size: 25px !important;
             margin-top: 10px;
+            border: 2px solid white;
+            padding: 15px;
+            background-color: rgba(59, 59, 59, 0.311);
         }
 
         p {
             color: white;
+            padding-left: 15px;
+        }
+
+        div.hogwarts_logo {
+            background-color: rgba(59, 59, 59, 0.311);
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            font-size: 45px;
+            margin-top: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        div.potter_book {
+            display: flex;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
+    <!-- potter books: https://www.wizardingworld.com/discover/books -->
     <header>
         <div id="header_logo">
             <span>
@@ -66,10 +89,16 @@
             <span>
                 <img src="./src/6137929c4b96600004f676fe.png" alt="hogwarts_logo" id="hogwarts_logos">
             </span>
-            <p>Hogwarts School of Witchcraft and Wizardry, the famous school from the Harry Potter series, has several
-                logos and crests associated with it. The most recognizable crest features a shield divided into four
-                sections, with each section representing one of the four Hogwarts houses: Gryffindor, Hufflepuff,
-                Ravenclaw, and Slytherin.</p>
+            <div class="hogwarts_logo">
+                <p>Hogwarts School of Witchcraft and Wizardry, the famous school from the Harry Potter series, has
+                    several
+                    logos and crests associated with it. The most recognizable crest features a shield divided into four
+                    sections, with each section representing one of the four Hogwarts houses: Gryffindor, Hufflepuff,
+                    Ravenclaw, and Slytherin.</p>
+            </div>
+        </div>
+        <div id="potter_book">
+            <h2>Potter's Book</h2>
         </div>
     </main>
 </body>
