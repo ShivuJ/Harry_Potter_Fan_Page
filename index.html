@@ -13,7 +13,7 @@
             font-family: Bluu Next, serif;
         }
 
-        div#header_logo {
+        #header_logo {
             display: flex;
             text-align: left;
             justify-content: center;
@@ -25,11 +25,12 @@
             margin-top: 10px;
         }
 
-        img#logo {
-            width: 300px;
+        #logo {
+            /* width: 300px !important; */
+            height: 150px;
         }
 
-        img#hogwarts_logos {
+        #hogwarts_logos {
             height: 250px;
         }
 
@@ -39,7 +40,7 @@
 
         }
 
-        div#hogwarts_logo {
+        #hogwarts_logo {
             display: flex;
             font-size: 25px !important;
             margin-top: 10px;
@@ -53,7 +54,7 @@
             padding-left: 15px;
         }
 
-        div.hogwarts_logo {
+        .hogwarts_logo {
             background-color: rgba(59, 59, 59, 0.311);
             text-align: center;
         }
@@ -65,9 +66,57 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
-        div.potter_book {
+        .potter_book {
             display: flex;
             text-align: center;
+        }
+
+        img {
+            height: 300px;
+        }
+
+        #card {
+            display: grid;
+
+        }
+
+        .flipcard {
+            perspective: 1000px;
+        }
+
+        .inside_card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            float: left;
+        }
+
+        .flipcard:hover .inside_card {
+            transform: rotateY(180deg);
+        }
+
+        .card_front,
+        .card_back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+
+        .card_front {
+            background-color: #bbb;
+            color: white;
+        }
+
+        .card_back {
+            background-color: dodgerblue;
+            color: white;
+            transform: rotateY(180deg);
         }
     </style>
 </head>
@@ -98,8 +147,135 @@
             </div>
         </div>
         <div id="potter_book">
-            <h2>Potter's Book</h2>
+            <h2>Harry Potter Films</h2>
         </div>
+        <section>
+            <div id="card ">
+                <div class="flipcard">
+                    <div class="inside_card">
+                        <div class="card_front">
+                            <img src="./src/1.jpg" alt="Harry Potter and the Philosopher's Stone">
+                        </div>
+                        <div class="card_back">
+                            <h6>Harry Potter and the Philosopher's Stone</h6>
+                            <pre>
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="inside_card">
+                        <div class="card_front">
+                            <img src="./src/2.jfif" alt="Harry Potter and the Chamber of Secrets">
+
+                        </div>
+                        <div class="card_back">
+                            <h6>Harry Potter and the Philosopher's Stone</h6>
+                            <pre>
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="inside_card">
+                        <div class="card_front">
+                            <img src="./src/3.webp" alt="Harry Potter and the Prisoner of Azkaban">
+
+                        </div>
+
+                        <div class="card_back">
+                            <h6>Harry Potter and the Philosopher's Stone</h6>
+                            <pre>
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="inside_card">
+                        <div class="card_front">
+                            <img src="./src/4.jpg" alt="Harry Potter and the Goblet of Fire">
+
+                        </div>
+
+                        <div class="card_back">
+                            <h6>Harry Potter and the Philosopher's Stone</h6>
+                            <pre>
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="inside_card">
+                        <div class="card_front">
+                            <img src="./src/5.jpg" alt="Harry Potter and the Order of the Phoenix">
+
+                        </div>
+                        <div class="card_back">
+                            <h6>Harry Potter and the Philosopher's Stone</h6>
+                            <pre>
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="inside_card">
+                        <div class="card_front">
+                            <img src="./src/6.jpg" alt="Harry Potter and the Half-Blood Prince">
+
+                        </div>
+
+                        <div class="card_back">
+                            <h6>Harry Potter and the Philosopher's Stone</h6>
+                            <pre>
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="inside_card">
+                        <div class="card_front">
+                            <img src="./src/7.jpg" alt="Harry Potter and the Deathly Hallows Part 1">
+
+                        </div>
+
+                        <div class="card_back">
+                            <h6>Harry Potter and the Philosopher's Stone</h6>
+                            <pre>
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipcard">
+                    <div class="inside_card">
+                        <div class="card_front">
+                            <img src="./src/8.jpg" alt="Harry Potter and the Deathly Hallows Part 2">
+
+                        </div>
+
+                        <div class="card_back">
+                            <h6>Harry Potter and the Philosopher's Stone</h6>
+                            <pre>
+
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
