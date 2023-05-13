@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
+        html,
         body {
             background-color: black;
             justify-content: center;
@@ -17,6 +18,7 @@
             display: flex;
             text-align: left;
             justify-content: center;
+            color: black;
         }
 
         h1 {
@@ -30,8 +32,10 @@
             height: 150px;
         }
 
-        #hogwarts_logos {
+        img {
             height: 250px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         main {
@@ -40,89 +44,47 @@
 
         }
 
-        #hogwarts_logo {
+        #hogwarts_logo,
+        .potters_flim {
             display: flex;
             font-size: 25px !important;
-            margin-top: 10px;
+            margin-top: 20px;
             border: 2px solid white;
-            padding: 15px;
-            background-color: rgba(59, 59, 59, 0.311);
+            padding: 10px;
+            background-color: rgba(59, 59, 59, 0.612);
+            border-radius: 20px;
         }
 
         p {
             color: white;
             padding-left: 15px;
+            text-align: justify;
+            font-variant: small-caps;
         }
 
-        .hogwarts_logo {
-            background-color: rgba(59, 59, 59, 0.311);
-            text-align: center;
+        .hogwarts_logo,
+        {
+        background-color: rgba(59, 59, 59, 0.311);
+        text-align: center;
         }
 
         h2 {
             color: white;
             font-size: 45px;
             margin-top: 10px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        .potter_book {
-            display: flex;
+            /* font-family: Bluu Next, serif; */
             text-align: center;
+            padding-top: 20px;
         }
 
-        img {
-            height: 300px;
-        }
-
-        #card {
-            display: grid;
-
-        }
-
-        .flipcard {
-            perspective: 1000px;
-        }
-
-        .inside_card {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-            float: left;
-        }
-
-        .flipcard:hover .inside_card {
-            transform: rotateY(180deg);
-        }
-
-        .card_front,
-        .card_back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            /* Safari */
-            backface-visibility: hidden;
-        }
-
-        .card_front {
-            background-color: #bbb;
-            color: white;
-        }
-
-        .card_back {
-            background-color: dodgerblue;
-            color: white;
-            transform: rotateY(180deg);
+        .potters_flim:hover {
+            box-shadow: 5px 5px 5px 5px whitesmoke;
         }
     </style>
 </head>
 
 <body>
-    <!-- potter books: https://www.wizardingworld.com/discover/books -->
+    <!-- potter flims: https://www.wizardingworld.com/discover/flims -->
     <header>
         <div id="header_logo">
             <span>
@@ -146,136 +108,115 @@
                     Ravenclaw, and Slytherin.</p>
             </div>
         </div>
-        <div id="potter_book">
+        <div id="potter_flim">
             <h2>Harry Potter Films</h2>
         </div>
-        <section>
-            <div id="card ">
-                <div class="flipcard">
-                    <div class="inside_card">
-                        <div class="card_front">
-                            <img src="./src/1.jpg" alt="Harry Potter and the Philosopher's Stone">
-                        </div>
-                        <div class="card_back">
-                            <h6>Harry Potter and the Philosopher's Stone</h6>
-                            <pre>
 
-                    </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flipcard">
-                    <div class="inside_card">
-                        <div class="card_front">
-                            <img src="./src/2.jfif" alt="Harry Potter and the Chamber of Secrets">
-
-                        </div>
-                        <div class="card_back">
-                            <h6>Harry Potter and the Philosopher's Stone</h6>
-                            <pre>
-
-                    </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flipcard">
-                    <div class="inside_card">
-                        <div class="card_front">
-                            <img src="./src/3.webp" alt="Harry Potter and the Prisoner of Azkaban">
-
-                        </div>
-
-                        <div class="card_back">
-                            <h6>Harry Potter and the Philosopher's Stone</h6>
-                            <pre>
-
-                    </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flipcard">
-                    <div class="inside_card">
-                        <div class="card_front">
-                            <img src="./src/4.jpg" alt="Harry Potter and the Goblet of Fire">
-
-                        </div>
-
-                        <div class="card_back">
-                            <h6>Harry Potter and the Philosopher's Stone</h6>
-                            <pre>
-
-                    </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flipcard">
-                    <div class="inside_card">
-                        <div class="card_front">
-                            <img src="./src/5.jpg" alt="Harry Potter and the Order of the Phoenix">
-
-                        </div>
-                        <div class="card_back">
-                            <h6>Harry Potter and the Philosopher's Stone</h6>
-                            <pre>
-
-                    </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flipcard">
-                    <div class="inside_card">
-                        <div class="card_front">
-                            <img src="./src/6.jpg" alt="Harry Potter and the Half-Blood Prince">
-
-                        </div>
-
-                        <div class="card_back">
-                            <h6>Harry Potter and the Philosopher's Stone</h6>
-                            <pre>
-
-                    </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flipcard">
-                    <div class="inside_card">
-                        <div class="card_front">
-                            <img src="./src/7.jpg" alt="Harry Potter and the Deathly Hallows Part 1">
-
-                        </div>
-
-                        <div class="card_back">
-                            <h6>Harry Potter and the Philosopher's Stone</h6>
-                            <pre>
-
-                    </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flipcard">
-                    <div class="inside_card">
-                        <div class="card_front">
-                            <img src="./src/8.jpg" alt="Harry Potter and the Deathly Hallows Part 2">
-
-                        </div>
-
-                        <div class="card_back">
-                            <h6>Harry Potter and the Philosopher's Stone</h6>
-                            <pre>
-
-                    </pre>
-                        </div>
-                    </div>
+        <div id="potter_flims">
+            <div class="potters_flim">
+                <span>
+                    <img src="./src/1.jpg" alt="Potter1" class="potter_flim">
+                </span>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem, aspernatur omnis
+                        necessitatibus sapiente molestiae fugit dignissimos dolorum distinctio. Sit minus expedita vero?
+                        Quis facere ratione ex neque odio vero libero earum modi doloribus architecto fugit ea
+                        consequatur,
+                        sunt eos sint deleniti inventore ullam dicta minus. Laborum, magni! Quidem, consectetur!</p>
                 </div>
             </div>
-        </section>
+
+            <div class="potters_flim">
+                <span>
+                    <img src="./src/2.jfif" alt="Potter2" class="potter_flim">
+                </span>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem, aspernatur omnis
+                        necessitatibus sapiente molestiae fugit dignissimos dolorum distinctio. Sit minus expedita vero?
+                        Quis facere ratione ex neque odio vero libero earum modi doloribus architecto fugit ea
+                        consequatur,
+                        sunt eos sint deleniti inventore ullam dicta minus. Laborum, magni! Quidem, consectetur!</p>
+                </div>
+            </div>
+
+            <div class="potters_flim">
+                <span>
+                    <img src="./src/3.webp" alt="Potter3" class="potter_flim">
+                </span>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem, aspernatur omnis
+                        necessitatibus sapiente molestiae fugit dignissimos dolorum distinctio. Sit minus expedita vero?
+                        Quis facere ratione ex neque odio vero libero earum modi doloribus architecto fugit ea
+                        consequatur,
+                        sunt eos sint deleniti inventore ullam dicta minus. Laborum, magni! Quidem, consectetur!</p>
+                </div>
+            </div>
+
+            <div class="potters_flim">
+                <span>
+                    <img src="./src/4.jpg" alt="Potter4" class="potter_flim">
+                </span>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem, aspernatur omnis
+                        necessitatibus sapiente molestiae fugit dignissimos dolorum distinctio. Sit minus expedita vero?
+                        Quis facere ratione ex neque odio vero libero earum modi doloribus architecto fugit ea
+                        consequatur,
+                        sunt eos sint deleniti inventore ullam dicta minus. Laborum, magni! Quidem, consectetur!</p>
+                </div>
+            </div>
+
+            <div class="potters_flim">
+                <span>
+                    <img src="./src/5.jpg" alt="Potter5" class="potter_flim">
+                </span>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem, aspernatur omnis
+                        necessitatibus sapiente molestiae fugit dignissimos dolorum distinctio. Sit minus expedita vero?
+                        Quis facere ratione ex neque odio vero libero earum modi doloribus architecto fugit ea
+                        consequatur,
+                        sunt eos sint deleniti inventore ullam dicta minus. Laborum, magni! Quidem, consectetur!</p>
+                </div>
+            </div>
+
+            <div class="potters_flim">
+                <span>
+                    <img src="./src/6.jpg" alt="Potter6" class="potter_flim">
+                </span>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem, aspernatur omnis
+                        necessitatibus sapiente molestiae fugit dignissimos dolorum distinctio. Sit minus expedita vero?
+                        Quis facere ratione ex neque odio vero libero earum modi doloribus architecto fugit ea
+                        consequatur,
+                        sunt eos sint deleniti inventore ullam dicta minus. Laborum, magni! Quidem, consectetur!</p>
+                </div>
+            </div>
+
+            <div class="potters_flim">
+                <span>
+                    <img src="./src/7.jpg" alt="Potter7" class="potter_flim">
+                </span>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem, aspernatur omnis
+                        necessitatibus sapiente molestiae fugit dignissimos dolorum distinctio. Sit minus expedita vero?
+                        Quis facere ratione ex neque odio vero libero earum modi doloribus architecto fugit ea
+                        consequatur,
+                        sunt eos sint deleniti inventore ullam dicta minus. Laborum, magni! Quidem, consectetur!</p>
+                </div>
+            </div>
+
+            <div class="potters_flim">
+                <span>
+                    <img src="./src/8.jpg" alt="Potter7.1" class="potter_flim">
+                </span>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem, aspernatur omnis
+                        necessitatibus sapiente molestiae fugit dignissimos dolorum distinctio. Sit minus expedita vero?
+                        Quis facere ratione ex neque odio vero libero earum modi doloribus architecto fugit ea
+                        consequatur,
+                        sunt eos sint deleniti inventore ullam dicta minus. Laborum, magni! Quidem, consectetur!</p>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
