@@ -1,0 +1,97 @@
+html,
+body {
+    /* background-color: black; */
+    background-image: linear-gradient(160deg, black, rgba(33, 46, 75, 0.745), black, rgba(33, 46, 75, 0.745), black);
+    justify-content: center;
+    font-family: Bluu Next, serif;
+}
+
+#header_logo {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 10px;
+    text-shadow: 2px 4px 2px grey;
+}
+
+#logo {
+    /* width: 300px !important; */
+    height: 150px;
+}
+
+img {
+    height: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    object-fit: fill;
+}
+
+main {
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+#hogwarts_logo,
+.potters_flim {
+    display: flex;
+    font-size: 25px !important;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: rgba(59, 59, 59, 0.612);
+    border-radius: 20px;
+}
+
+p {
+    color: white;
+    padding-left: 15px;
+    text-align: justify;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.hogwarts_logo {
+    background-color: rgba(59, 59, 59, 0.311);
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 45px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 4px 2px grey;
+}
+
+.potter_flim {
+    height: 300px !important;
+    margin-top: 20px;
+    vertical-align: baseline;
+}
+
+.potters_flim:hover {
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+}
+
+.potter {
+    width: 100%;
+    margin-left: -19px;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    margin-bottom: -150px;
+}
+
+pre {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
